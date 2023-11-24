@@ -9,5 +9,9 @@ func main() {
 		c.Send("Hello, World!")
 	})
 
+	app.Get("/question", func(c *fiber.Ctx) {
+		c.Send("Thank you for your question")
+	})
+
 	app.Listen(3000)
 }
